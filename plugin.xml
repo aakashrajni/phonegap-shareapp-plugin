@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    id="Share"
+    version="1.0.2">
+
+    <name>Share</name>
+
+   <description>
+       Simple hybrid bridge example
+   </description>
+
+   <author>aakash</author>
+
+   <license>MIT</license>      
+   <keywords>Hybrid, Embedded </keywords>
+
+   <engines>
+       <engine name="cordova-android" version=">=3.7.0"/>
+   </engines>
+  
+   <js-module src="www/js/Share.js" name="Share">
+       <clobbers target="Share" />
+   </js-module>
+
+   <!-- android -->
+   <platform name="android">
+       <config-file target="config.xml" parent="/*">
+           <feature name="Share">
+               <param name="android-package" value="org.sample.share.Share" />
+           </feature>
+       </config-file>
+       <source-file src="src/android/org/sample/share/Share.java" target-dir="src/org/sample/share"/>
+   </platform>
+</plugin>

@@ -1,0 +1,28 @@
+{
+  "name": "share-app-plugin",
+  "version": "1.0.2",
+  "description": "simple intent plugin",
+  "cordova": {
+    "id": "share-app-plugin",
+    "platforms": []
+  },
+  "engines": {
+    "cordovaDependencies": {
+        "1.0.0": { "cordova-android": "<3.0.0"},
+        "1.0.2": { "cordova-android": ">4.0.0"}
+    }
+},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aakashrajni/cordova_share.git"
+  },
+  "keywords": [
+    "ecosystem:cordova"
+  ],
+  "author": "aakash",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aakashrajni/cordova_share/issues"
+  },
+  "homepage": "https://github.com/aakashrajni/cordova_share#readme"
+}
