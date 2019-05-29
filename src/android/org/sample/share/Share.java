@@ -15,22 +15,15 @@ package org.sample.share;
      public boolean execute(String action, JSONArray args, CallbackContext callbackContext) throws JSONException {
          try {
              if (action.equals("addItem")) {
-                //  String item = args.getString(0);
-                //  String className = args.getString(1);
-                //  Context context = cordova.getActivity().getApplicationContext();
-                //  Intent intent = new Intent(context,Class.forName(className));
-                //  itemsList.add(item);
-                //  intent.putStringArrayListExtra("items", itemsList);
-                
+                String item = args.getString(0);
+                String sharetext = args.getString(1);
                 Intent sendIntent = new Intent();
                 sendIntent.setAction(Intent.ACTION_SEND);
-                sendIntent.putExtra(Intent.EXTRA_TEXT,
-            "Hey check out my app at: paste app link here");
-                sendIntent.setType("text/plain");
-                // context.startActivity(sendIntent);
-                 cordova.startActivityForResult(this,sendIntent,1);
-                 callbackContext.success();
-                 return true;
+                sendIntent.putExtra(Intent.EXTRA_TEXT,sharetext);
+                sendIntent.setType(item);
+                cordova.startActivityForResult(this,sendIntent,1);
+                callbackContext.success();
+                return true;
              }
              callbackContext.error("Invalid action");
              return false;

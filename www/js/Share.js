@@ -4,8 +4,8 @@ var exec = require('cordova/exec'),
 function Share() {
 
 }
-Share.prototype.addItem = function(item, successCallback, errorCallback) {
-   exec(successCallback, errorCallback, "Share", "addItem", [item]);
+Share.prototype.addItem = function(item, sharetext, successCallback, errorCallback) {
+   exec(successCallback, errorCallback, "Share", "addItem", [item,sharetext]);
 };
 
 module.exports = new Share();
