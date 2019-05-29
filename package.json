@@ -14,7 +14,7 @@
 },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/aakashrajni/cordova_share.git"
+    "url": "git+https://github.com/aakashrajni/phonegap-shareapp-plugin.git"
   },
   "keywords": [
     "ecosystem:cordova"
@@ -22,7 +22,7 @@
   "author": "aakash",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/aakashrajni/cordova_share/issues"
+    "url": "https://github.com/aakashrajni/phonegap-shareapp-plugin/issues"
   },
-  "homepage": "https://github.com/aakashrajni/cordova_share#readme"
+  "homepage": "https://github.com/aakashrajni/phonegap-shareapp-plugin#readme"
 }
